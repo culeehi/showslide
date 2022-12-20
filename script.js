@@ -1,10 +1,10 @@
-var imgShow = document.querySelector('.img-show');
-var listImg = document.querySelectorAll('.list-image img');
+const imgShow = document.querySelector('.img-show');
+const listImg = document.querySelectorAll('.list-image img');
 
-var agoBtn = document.querySelector('.ago');
-var nextBtn = document.querySelector('.next');
+const agoBtn = document.querySelector('.ago');
+const nextBtn = document.querySelector('.next');
 
-var imgIndex = 0;
+let imgIndex = 0;
 
 //hàm update ảnh chính
 function updateImg(index) {
@@ -81,12 +81,3 @@ function startChange() {
 }
 
 updateImg(0);
-
-// function startAuto() {
-//    autoSlide = setInterval(nextSlide, 2000);
-// }
-
-// function stopAuto() {
-//    clearInterval(autoSlide);
-// }
-// startAuto();
